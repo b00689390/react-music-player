@@ -1,0 +1,47 @@
+.player-wrapper {
+  @apply w-full;
+}
+
+.player-wrapper .time-control {
+  @apply flex items-center justify-between lg:w-2/3 xl:w-1/2 lg:mx-auto px-4 py-6 mb-8;
+}
+
+.player-wrapper .time-control .track {
+  @apply bg-gray-200 w-2/3 h-4 relative rounded-lg overflow-hidden;
+}
+
+.player-wrapper .time-control .track .animate-track {
+  @apply bg-gray-200 w-full h-full absolute top-0 left-0 transform translate-x-[0%];
+  pointer-events: none;
+}
+
+.player-wrapper .time-control input[type="range"] {
+  @apply w-full bg-transparent cursor-pointer;
+  -webkit-appearance: none;
+}
+
+.player-wrapper .time-control input[type="range"]:focus {
+  outline: none;
+}
+
+.player-wrapper .time-control input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @apply h-4 w-4;
+}
+
+.player-wrapper .time-control input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  @apply h-4 w-4 bg-transparent border-none;
+}
+
+.player-wrapper .time-control p {
+  @apply w-1/6 text-center;
+}
+
+.player-wrapper .play-control {
+  @apply w-3/4 md:w-2/3 lg:w-1/2 mx-auto p-4 flex items-center justify-between lg:justify-center lg:space-x-32;
+}
+
+.player-wrapper .play-control svg {
+  @apply cursor-pointer;
+}

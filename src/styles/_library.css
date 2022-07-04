@@ -1,0 +1,15 @@
+.library-song {
+    @apply w-full cursor-pointer p-8 transition-colors ease-in-out duration-500 hover:bg-blue-100;
+}
+
+.library-song.selected {
+    @apply bg-purple-300 transition-colors ease-out duration-500 hover:bg-purple-300;
+}
+
+.library-wrapper {
+    @apply bg-gradient-to-tr from-indigo-200 to-pink-200 fixed top-0 left-0 w-full md:w-1/2 lg:w-[40%] shadow-2xl h-screen py-8 overflow-scroll transform translate-x-[-100%] transition-all ease-linear duration-300 opacity-0;
+}
+
+.library-wrapper.active {
+    @apply translate-x-[0%] opacity-100;
+}

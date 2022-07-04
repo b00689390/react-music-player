@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(191, 219, 254, 0.5) transparent;
+}
+
+*::webkit-scrollbar {
+  @apply w-[5px];
+}
+
+*::webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+*::webkit-scrollbar-thumb {
+  background-color : rgba(191, 219, 254, 0.5);
+  @apply rounded-[20px] border-transparent; 
+}
+
+html {
+  @apply font-body font-light text-[#2a2a2a];
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading font-semibold leading-tight;
+}
+
+h1 {
+  @apply text-xl md:text-3xl;
+}
+
+h2 {
+  @apply text-lg md:text-2xl;
+}
+
+h3 {
+  @apply text-base md:text-xl;
+}
+
+.App {
+  @apply transition-all ease-in-out duration-500;
+}
+
+.App.active {
+  @apply md:ml-[50%] lg:ml-[40%]
+}
+
+@import "./_player.css";
+@import "./_song.css";
+@import "./_library.css";
+@import "./_buttons.css";
